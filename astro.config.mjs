@@ -1,10 +1,10 @@
-import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
-import { remarkReadingTime } from './src/utils/readingTime';
-import rehypePrettyCode from 'rehype-pretty-code';
-import vercelStatic from '@astrojs/vercel/static';
 import react from '@astrojs/react';
 import sitemap from "@astrojs/sitemap";
+import tailwind from '@astrojs/tailwind';
+import vercelStatic from '@astrojs/vercel/static';
+import { defineConfig } from 'astro/config';
+import rehypePrettyCode from 'rehype-pretty-code';
+import { remarkReadingTime } from './src/utils/readingTime';
 const options = {
   // Specify the theme to use or a custom theme json, in our case
   // it will be a moonlight-II theme from
@@ -30,7 +30,8 @@ const options = {
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://astro-tech-blog-ten.vercel.app/',
+	site: 'https://kevyn-rocha.github.io',
+  base: '/blog',
 	markdown: {
 		syntaxHighlight: false,
 		// Disable syntax built-in syntax hightlighting from astro

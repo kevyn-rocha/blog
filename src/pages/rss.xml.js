@@ -1,4 +1,4 @@
-import rss, {pagesGlobToRssItems} from '@astrojs/rss';
+import rss, { pagesGlobToRssItems } from '@astrojs/rss';
 
 export async function GET(context) {
   return rss({
@@ -9,6 +9,6 @@ export async function GET(context) {
       import.meta.glob('./posts/*.{md,mdx}'),
     ),
     stylesheet: './rss/styles.xsl',
-    customData: `<language>en-us</language>`,
+    customData: `<language>pt-BR</language>`,
   });
 }

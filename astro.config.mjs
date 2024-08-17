@@ -30,7 +30,7 @@ const options = {
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://kevyn-rocha.github.io',
-  base: '/blog',
+  base: '/me',
 	markdown: {
 		syntaxHighlight: false,
 		// Disable syntax built-in syntax hightlighting from astro
@@ -38,10 +38,5 @@ export default defineConfig({
 		remarkPlugins: [remarkReadingTime]
 	},
 	integrations: [tailwind(), react(), sitemap()],
-	// output: 'static',
-	// adapter: vercelStatic({
-	// 	webAnalytics: {
-	// 		enabled: true
-	// 	}
-	// })
+	output: 'static',
 });

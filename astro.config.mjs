@@ -30,7 +30,7 @@ const options = {
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://kevyn-rocha.github.io',
-  base: '/me',
+  base: '/blog',
 	markdown: {
 		syntaxHighlight: false,
 		// Disable syntax built-in syntax hightlighting from astro
